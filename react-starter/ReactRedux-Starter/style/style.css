@@ -1,0 +1,9 @@
+.search-bar {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+li:hover {
+    background:#DFDFDF;
+    cursor:pointer;
+}

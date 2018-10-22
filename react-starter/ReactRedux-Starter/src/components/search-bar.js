@@ -8,7 +8,7 @@ class SearchBar extends Component {
 
     changeSearch = (e) => this.setState({search: e.target.value});
 
-    render = () =>  <div className="row">
+    render = () =>  <div className="row search-bar">
                         <div className="col-md-8">
                             <input type="text" className="form-control input" onChange={this.changeSearch} placeholder={this.state.placeholder}/>
                         </div>   

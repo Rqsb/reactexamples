@@ -29,18 +29,17 @@ class App extends Component {
 
     render = () => {
         if (this.state.isLoaded) {
-            console.log(this.state)
             return <div>
                     <SearchBar/>
                     <div className="row">
                         <div className="col-md-8">
                             <VideoPlayer key={this.state.trailer} />
+                            <VideoDetail title={this.state.movies[0].title} description={this.state.movies[0].overview} />
                         </div>
-                        <div>
+                        <div className="col-md-4">
                             <Featured movies={this.state.movies.slice(1, 6)}/>
                         </div>
                     </div>
-                    <VideoDetail title={this.state.movies[0].title} description={this.state.movies[0].overview} />
                 </div>
         } else {
             return <div><SearchBar/></div>
