@@ -3,5 +3,8 @@
 		{
 			"path": "ReactRedux-Starter"
 		}
-	]
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
 }
