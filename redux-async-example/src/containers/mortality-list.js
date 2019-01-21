@@ -5,6 +5,8 @@ import { bindActionCreators }  from 'redux'
 import { getMortality, removeMortality } from '../actions/index'
 
 class MortalityList extends Component {
+    componentWillMount = () => this.props.getMortality(this.props.defaultCountry)
+
     removeItem = (item) => {
         this.props.removeMortality(item)
     }

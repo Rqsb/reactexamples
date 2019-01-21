@@ -24,7 +24,7 @@ class SearchBar extends Component {
     render = () => {
         if (this.props.countries) {
             return <div>
-                <select className="col-md-12 input-group" value={this.state.selectedCountry} onChange={this.selectValue}>{this.getOptions(this.props.countries)}</select>
+                <select className="col-md-12 input-group searchbar" value={this.state.selectedCountry} onChange={this.selectValue}>{this.getOptions(this.props.countries)}</select>
             </div>
         } else {
             return <div>Loading country database ...</div>

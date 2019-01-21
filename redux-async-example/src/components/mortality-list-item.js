@@ -12,11 +12,11 @@ const MortalityListItem = ({item, remove}) => {
     return <tr>
         <td>
             <Flag country={item.country} />
-            <br /><br />
+            <br />
             <button onClick={() => remove(item)}>Retirer</button>
         </td>
-        <td className="col-md-6"><ColumnChart xtitle={XTITLE} ytitle={YTITLE} data={item.male.map((entry) => mapData(entry))} /></td>
-        <td className="col-md-6"><ColumnChart xtitle={XTITLE} ytitle={YTITLE} data={item.female.map((entry) => mapData(entry))} /></td>
+        <td className="col-md-6"><ColumnChart xtitle={XTITLE} ytitle={YTITLE} max={30} data={item.male.map((entry) => mapData(entry))} /></td>
+        <td className="col-md-6"><ColumnChart xtitle={XTITLE} ytitle={YTITLE} max={30} data={item.female.map((entry) => mapData(entry))} /></td>
     </tr>
 }
 
