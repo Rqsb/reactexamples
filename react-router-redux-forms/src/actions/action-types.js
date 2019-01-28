@@ -1,0 +1,6 @@
+export const POST_ACTION_TYPES = {
+    DELETE: 'DELETE_POST',
+    CREATE: 'CREATE_POST',
+    READ: 'READ_POST',
+    READ_ALL: 'READ_POST'
+}
